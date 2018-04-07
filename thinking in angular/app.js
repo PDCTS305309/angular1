@@ -37,3 +37,24 @@ function calcFunction() {
         }
     }
 }
+
+//more-directive app
+var moreDirApp = angular.module("more-directive-app", []);
+moreDirApp.controller("more-directive-app-ctrl", moreDirAppController);
+function moreDirAppController() {
+   /* this.myList = {
+        {'name': "foo", 'age': 20 },
+        {'name': "Bar", 'age': 30 },
+        {'name': "Buzz", 'age': 40},
+        {'name': "Baz", 'age': 50 },
+        {'name': "Non", 'age': 60 },
+    };*/
+}
+
+//modules dilemma
+
+var modulesDilemmaApp = angular.module("modulesDilemmaApp", []);
+modulesDilemmaApp.controller("modulesDilemmaCtrl", modulesDilemmaCtrl);
+function modulesDilemmaCtrl () {
+    this.helloMessage = "Hello, I am from main module !"
+}
